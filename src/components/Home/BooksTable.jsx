@@ -8,13 +8,13 @@ const BooksTable = ({ books }) => {
     <table className="w-full border-separate border-spacing-2">
       <thead>
         <tr>
-          <th className="border border-slate-600 rounded-md">No</th>
+          <th className="border border-slate-600 rounded-md">NO.</th>
           <th className="border border-slate-600 rounded-md">Title</th>
           <th className="border border-slate-600 rounded-md max-md:hidden">
             Author
           </th>
           <th className="border border-slate-600 rounded-md max-md:hidden">
-            Publish Year
+            image
           </th>
           <th className="border border-slate-600 rounded-md">Operations</th>
         </tr>
@@ -33,7 +33,7 @@ const BooksTable = ({ books }) => {
               {book.author}
             </td>
             <td className="border border-slate-800 rounded-md text-center max-md:hidden">
-              {book.publishedYear}
+              <img className="w-10 h-15 m-auto rounded-lg" src={book.imageURL} alt={book.title} />
             </td>
             <td className="border border-slate-800 rounded-md text-center">
               <div className="flex justify-center gap-x-4">

@@ -6,6 +6,7 @@ Version 1.0, 08/14/23
 
 - [Client](https://github.com/HichamBenkada/Capstone_FrontEnd.git) 
 
+- [Client2](https://github.com/HichamBenkada/Capstone_frontEnd2/) 
 
 ## Usage
 Explore the book collection.

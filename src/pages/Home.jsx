@@ -37,7 +37,7 @@ const Home = () => {
         >
           Table
         </button>
-        <Link to='http://localhost:5174/'>
+        <Link to='http://localhost:5173/'>
           <div className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg cursor-pointer">
             Client Interface
           </div>
