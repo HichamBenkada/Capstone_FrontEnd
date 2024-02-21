@@ -1,8 +1,25 @@
-# React + Vite
+# Capstone Completion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Version 1.0, 08/14/23
 
-Currently, two official plugins are available:
+- [Server](https://github.com/HichamBenkada/Capstone_BackEnd.git) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Client](https://github.com/HichamBenkada/Capstone_FrontEnd.git) 
+
+
+## Usage
+Explore the book collection.
+Add, edit, or delete books from the collection.
+Use the search and filter functionalities to find specific books.
+
+## Technologies Used
+MongoDB
+Express.js
+React.js
+Node.js
+HTML/CSS
+Additional libraries and tools are used to ensure the app functionality
+
+### Contributions:
+
+Contributions are welcome! If you have any ideas for improvement or would like to report a bug, please open an issue or submit a pull request.

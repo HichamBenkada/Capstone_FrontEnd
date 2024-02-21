@@ -36,7 +36,8 @@ const EditBook = () => {
     const book = {
       title,
       author,
-      publishedYear,
+      imageURL,
+      description,
     };
     setLoading(true);
     axios

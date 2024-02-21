@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { redirect } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../components/Spinner";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
@@ -11,7 +12,6 @@ import BooksCard from "../components/Home/BooksCard";
 const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
-
   const [showType, setShowType] = useState("card");
 
   useEffect(() => {
@@ -37,6 +37,11 @@ const Home = () => {
         >
           Table
         </button>
+        <Link to='http://localhost:5174/'>
+          <div className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg cursor-pointer">
+            Client Interface
+          </div>
+        </Link>
 
         <button
           className="bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg"
@@ -53,11 +58,11 @@ const Home = () => {
       </div>
       {loading ? (
         <Spinner />
-      ) : (showType === "table" ? (
+      ) : showType === "table" ? (
         <BooksTable books={books} />
       ) : (
         <BooksCard books={books} />
-      ))}
+      )}
     </div>
   );
 };
